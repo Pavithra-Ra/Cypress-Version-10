@@ -1,0 +1,36 @@
+{
+  "name": "cypressfwdemo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dashboard": "cypress run --record --key  d591dff8-24c1-4248-afe7-dbeb699edc1e",
+    "pretest": "npm run clean:reports",
+    "singlefileexecution": "npx cypress run --spec cypress/e2e/dragandDropDemo.spec.cy.js",
+    "cleanreports": "if exist cypress\\reports rmdir /s/q cypress\\reports && cypress\\reports mkdir cypress\\reports",
+    "scripts": "cypress run",
+    "combine-reports": "mochawesome-merge cypress/results/*.json >cypress/results/output.json",
+    "generate-reports": "marge cypress/results/output.json --reportDir ./ --inline",
+    "posttest": "npm run combine-reports && npm run generate-reports",
+    "test2": "npm run scripts || npm run posttest",
+    "testreport": "npm run pretest && npm run dashboard && npm run posttest"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^13.0.2",
+    "cypress": "^10.9.0",
+    "cypress-iframe": "^1.0.1",
+    "cypress-xpath": "^2.0.1"
+  },
+  "@badeball/cypress-cucumber-preprocessor": {
+    "stepDefinitions": "cypress/e2e/Feature/**/*.js"
+  },
+  "devDependencies": {
+    "cypress-file-upload": "^5.0.8",
+    "mocha": "^10.0.0",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.2.1"
+  },
+  "description": ""
+}

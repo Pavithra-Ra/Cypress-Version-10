@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-10-12T12:31:11.310Z",
+    "end": "2022-10-12T12:31:17.711Z",
+    "duration": 6401,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f71b3e1d-5f52-4ed5-8e85-a6df6e371f4f",
+      "title": "",
+      "fullFile": "cypress\\e2e\\multipleWindowDemo.spec.cy.js",
+      "file": "cypress\\e2e\\multipleWindowDemo.spec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "0d19bed7-4e6e-4c51-b213-1ed68d504c16",
+          "title": "Multiple Window",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Handle Multiple Window",
+              "fullTitle": "Multiple Window Handle Multiple Window",
+              "timedOut": null,
+              "duration": 4159,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(Cypress.env('UploadURL'));\nmultipleWindow.checkTitle();\nmultipleWindow.clickWindowButton();\nmultipleWindow.clickHereButton();",
+              "err": {},
+              "uuid": "c5f6e320-b927-4c4c-ad02-e1feb6410196",
+              "parentUUID": "0d19bed7-4e6e-4c51-b213-1ed68d504c16",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c5f6e320-b927-4c4c-ad02-e1feb6410196"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4159,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "reportFilename": "report",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "charts": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

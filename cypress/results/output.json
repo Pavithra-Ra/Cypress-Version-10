@@ -1,0 +1,289 @@
+{
+  "stats": {
+    "suites": 4,
+    "tests": 4,
+    "passes": 2,
+    "pending": 0,
+    "failures": 2,
+    "start": "2022-10-12T12:12:32.213Z",
+    "end": "2022-10-12T12:13:17.854Z",
+    "duration": 9444,
+    "testsRegistered": 4,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "de446868-d0f6-405c-be1a-57adfae5a066",
+      "title": "",
+      "fullFile": "cypress\\e2e\\dragandDropDemo.spec.cy.js",
+      "file": "cypress\\e2e\\dragandDropDemo.spec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c1aac044-7a04-4a60-9650-c9625b1a8261",
+          "title": "Drag and Drop",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should drag and drop",
+              "fullTitle": "Drag and Drop should drag and drop",
+              "timedOut": null,
+              "duration": 4931,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(Cypress.env('UploadURL'));\ndragAndDrop.checkTitle();\ndragAndDrop.clickDragLink();\ndragAndDrop.dragElement();\ndragAndDrop.dropElement();\ndragAndDrop.checkValidation();",
+              "err": {},
+              "uuid": "5a2aa5a6-50aa-440d-b9a8-23bd617a261b",
+              "parentUUID": "c1aac044-7a04-4a60-9650-c9625b1a8261",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "5a2aa5a6-50aa-440d-b9a8-23bd617a261b"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4931,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "8b218170-a04c-4d00-9a53-3ae055773ccf",
+      "title": "",
+      "fullFile": "cypress\\e2e\\fileUploadDemo.spec.cy.js",
+      "file": "cypress\\e2e\\fileUploadDemo.spec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5b292061-1064-4ee1-8b2b-0cb9fb226b62",
+          "title": "Upload Tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "upload file",
+              "fullTitle": "Upload Tests upload file",
+              "timedOut": null,
+              "duration": 183,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(Cypress.env('UploadURL'));\nfileUploadDemo.checkTitle();\nfileUploadDemo.clickFileUploadHome();\nfileUploadDemo.clickFileUpload();\nfileUploadDemo.clickFileSubmit();",
+              "err": {
+                "message": "TypeError: cy.get(...).attachFile is not a function",
+                "estack": "TypeError: cy.get(...).attachFile is not a function\n    at FileUploadDemo.clickFileUpload (webpack:///./cypress/support/PageObjects/fileUploadDemo.po.js:15:41)\n    at Context.eval (webpack:///./cypress/e2e/fileUploadDemo.spec.cy.js:12:19)",
+                "diff": null
+              },
+              "uuid": "db21832d-398e-4b18-ae52-2485c8e12043",
+              "parentUUID": "5b292061-1064-4ee1-8b2b-0cb9fb226b62",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "db21832d-398e-4b18-ae52-2485c8e12043"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 183,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "30316b35-a7e2-4a26-9bec-598431ccce2e",
+      "title": "",
+      "fullFile": "cypress\\e2e\\multipleWindowDemo.spec.cy.js",
+      "file": "cypress\\e2e\\multipleWindowDemo.spec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d0322063-0352-4a24-a2b6-0d3bac09645c",
+          "title": "Multiple Window",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Handle Multiple Window",
+              "fullTitle": "Multiple Window Handle Multiple Window",
+              "timedOut": null,
+              "duration": 4143,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(Cypress.env('UploadURL'));\nmultipleWindow.checkTitle();\nmultipleWindow.clickWindowButton();\nmultipleWindow.clickHereButton();",
+              "err": {},
+              "uuid": "20431717-65db-412b-b4fc-e5c7cda50d0c",
+              "parentUUID": "d0322063-0352-4a24-a2b6-0d3bac09645c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "20431717-65db-412b-b4fc-e5c7cda50d0c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4143,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "fb195b81-b445-495e-8cf6-6f59781754c0",
+      "title": "",
+      "fullFile": "cypress\\e2e\\2-advanced-examples\\iFrameDemo.spec.cy.js",
+      "file": "cypress\\e2e\\2-advanced-examples\\iFrameDemo.spec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "37dcd700-f028-4c07-9b6a-4c28600ab275",
+          "title": "Iframe Test Case",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "for iframe",
+              "fullTitle": "Iframe Test Case for iframe",
+              "timedOut": null,
+              "duration": 187,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(Cypress.env('UploadURL'));\niframeDemo.checkTitle();\niframeDemo.clickFrameLink();\niframeDemo.checkValid();\niframeDemo.clickIframeLink();\niframeDemo.verifyPages();\niframeDemo.enterIframeMain();\niframeDemo.verifyBold();",
+              "err": {
+                "message": "TypeError: cy.get(...).bevisible is not a function",
+                "estack": "TypeError: cy.get(...).bevisible is not a function\n    at IframeDemo.verifyPages (webpack:///./cypress/support/PageObjects/iframeDemo.po.js:25:21)\n    at Context.eval (webpack:///./cypress/e2e/2-advanced-examples/iFrameDemo.spec.cy.js:13:20)",
+                "diff": null
+              },
+              "uuid": "bfeac3fb-352a-46ed-a1d7-e0cec2b29781",
+              "parentUUID": "37dcd700-f028-4c07-9b6a-4c28600ab275",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "bfeac3fb-352a-46ed-a1d7-e0cec2b29781"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 187,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "reportFilename": "report",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "charts": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

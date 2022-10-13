@@ -1,0 +1,111 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-10-12T12:12:32.213Z",
+    "end": "2022-10-12T12:12:32.544Z",
+    "duration": 331,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "fb195b81-b445-495e-8cf6-6f59781754c0",
+      "title": "",
+      "fullFile": "cypress\\e2e\\2-advanced-examples\\iFrameDemo.spec.cy.js",
+      "file": "cypress\\e2e\\2-advanced-examples\\iFrameDemo.spec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "37dcd700-f028-4c07-9b6a-4c28600ab275",
+          "title": "Iframe Test Case",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "for iframe",
+              "fullTitle": "Iframe Test Case for iframe",
+              "timedOut": null,
+              "duration": 187,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(Cypress.env('UploadURL'));\niframeDemo.checkTitle();\niframeDemo.clickFrameLink();\niframeDemo.checkValid();\niframeDemo.clickIframeLink();\niframeDemo.verifyPages();\niframeDemo.enterIframeMain();\niframeDemo.verifyBold();",
+              "err": {
+                "message": "TypeError: cy.get(...).bevisible is not a function",
+                "estack": "TypeError: cy.get(...).bevisible is not a function\n    at IframeDemo.verifyPages (webpack:///./cypress/support/PageObjects/iframeDemo.po.js:25:21)\n    at Context.eval (webpack:///./cypress/e2e/2-advanced-examples/iFrameDemo.spec.cy.js:13:20)",
+                "diff": null
+              },
+              "uuid": "bfeac3fb-352a-46ed-a1d7-e0cec2b29781",
+              "parentUUID": "37dcd700-f028-4c07-9b6a-4c28600ab275",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "bfeac3fb-352a-46ed-a1d7-e0cec2b29781"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 187,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "reportFilename": "report",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "charts": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
